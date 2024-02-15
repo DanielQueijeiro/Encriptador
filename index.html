@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Encriptador</title>
+            <link rel="stylesheet" href="reset.css">
+            <link rel="stylesheet" href="style.css">
+            <script type = "text/javascript" src="code.js"></script> 
+            
+
+        </head>
+
+        <body>
+            <header>
+                <h1>Encriptador - Alura</h1>
+            </header>
+
+            <main>
+
+                <div class="contenedorEncriptado">
+                    <label for="mensaje" class="info">Mensaje encriptado</label>
+                    <textarea cols="50" rows="25" id="mensajeencriptado" required></textarea>
+                </div>
+
+                <input type="button" onclick="desencriptar();" value="Desencriptar mensaje" class="botondesencriptar">
+                <input type="button" onclick="encriptar();" value="Encriptar mensaje" class="botonencriptar" >
+
+                <div class="contenedorDesencriptado">
+                    <label for="mensaje" class="info">Mensaje desencriptado</label>
+                    <textarea cols="50" rows="25" id="mensajedesencriptado" required></textarea>
+                </div>
+
+
+            </main>
+    
+        </body>
+
+        <footer>
+            <p>Daniel Queijeiro - 2024</p>
+            <a href="https://github.com/DanielQueijeiro/"><img src="github.png" alt="Github"></a>
+        </footer>
+
+    </html>

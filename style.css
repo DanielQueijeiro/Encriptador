@@ -1,0 +1,108 @@
+html, body{
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    background-color: #AAABB8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1{
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 9px 0;
+}
+
+main{
+    height:90%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color: #ECECEC;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+
+.contenedorEncriptado{
+    display: inline-block;
+    margin: 0 0 0 120px;
+
+}
+
+.contenedorDesencriptado{
+    display: inline-block;
+    margin: 0 120px 0 30%;
+}
+
+.contenedorDesencriptado .info{
+    padding: 50px 10px 10px 140px ;
+}
+
+.info{
+    font-size: 25px;
+    display: block;
+    padding: 50px 0 10px 10px;
+}
+
+textarea{
+    resize: none;
+}
+
+.botondesencriptar{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    width: 10%;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 6px;
+    transition: 1s all;
+    cursor: pointer;
+    display: inline;
+}
+
+.botonencriptar{
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    width: 10%;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 6px;
+    transition: 1s all;
+    cursor: pointer;
+    display: inline;
+}
+
+
+.botonencriptar:hover, .botondesencriptar:hover{
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #AAABB8;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img{
+    margin-top: 7px;
+    width: 15px;
+}
