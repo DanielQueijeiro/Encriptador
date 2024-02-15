@@ -32,7 +32,7 @@ main{
 }
 
 .contenedorDesencriptado{
-    display: inline-block;
+    float: right;
     margin: 0 120px 0 30%;
 }
 
