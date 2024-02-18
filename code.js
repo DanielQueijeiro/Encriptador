@@ -13,10 +13,10 @@ function desencriptar() {
   }
 
   function encriptar() {
-    let mensajeDesencriptado = document.getElementById("mensajedesencriptado").value;
-    console.log(mensajeDesencriptado.length)
+    let mensajeDesencriptadoUpperCase = document.getElementById("mensajedesencriptado").value;
+    let mensajeDesencriptado = mensajeDesencriptadoUpperCase.toLowerCase()
+    mensajeDesencriptado = mensajeDesencriptado.replace(/[0-9]/g, '');
     let mensajeEncriptado = mensajeDesencriptado.split("");
-    console.log(mensajeEncriptado);
 
     for(let index in mensajeEncriptado){
       if(mensajeEncriptado[index] == "a"){
