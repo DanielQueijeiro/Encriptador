@@ -15,7 +15,7 @@ function desencriptar() {
   function encriptar() {
     let mensajeDesencriptado = document.getElementById("mensajedesencriptado").value;
     mensajeDesencriptado = mensajeDesencriptado.toLowerCase()
-    mensajeDesencriptado = mensajeDesencriptado.replace(/[0-9]/g, '');
+    mensajeDesencriptado = mensajeDesencriptado.replace(/[^a-zA-Z]/g, '');
     let mensajeEncriptado = mensajeDesencriptado.split("");
 
     for(let index in mensajeEncriptado){

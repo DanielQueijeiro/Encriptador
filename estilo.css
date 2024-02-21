@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background: rgb(198,238,255);
+    background: linear-gradient(51deg, rgba(198,238,255,1) 0%, rgba(96,150,255,1) 100%);
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+#textInput{
+    height: 200px;
+    width: 200px;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+}
