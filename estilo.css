@@ -1,34 +1,57 @@
 html, body {
     margin: 0;
     height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: rgb(198,238,255);
     background: linear-gradient(51deg, rgba(198,238,255,1) 0%, rgba(96,150,255,1) 100%);
 }
 
-header{
-    font-size: large;
+main{
+    margin: 25px 0;
     width: 100%;
-    margin: 15px;
+    height: 80%;
+}
+
+header{
+    font-size: larger;
+    width: 100%;
     padding: 20px 0;
-    text-align: left;
+    text-align: center;
 }
 
 .content{
+    height: 75%;
     display: flex;
     justify-content: space-around;
 }
 
 textarea{
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: medium;
     border: none;
     border-radius: 5px;
     resize: none;
+    display: block;
 }
 
+
 textarea::placeholder{
-    color: red;
+    color: gray;
+}
+
+.buttonContainer{
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonContainer input{
+    background-color: white;
+    border-width: 2px;
+    padding: 10px;
+    border-radius:5px ;
 }
 
 footer{
@@ -36,8 +59,8 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #AAABB8;
     padding: 10px;
+    font-size: small;
     text-align: center;
 }
 

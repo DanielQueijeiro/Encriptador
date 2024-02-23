@@ -1,5 +1,5 @@
 function desencriptar() {
-    let mensajeEncriptado = document.getElementById("mensajeencriptado").value;
+    let mensajeEncriptado = document.getElementById("textInput").value;
     let mensajeDesencriptado = mensajeEncriptado;
     for(let index in mensajeEncriptado){
       mensajeDesencriptado = mensajeDesencriptado.replaceAll("ai","a");
@@ -9,11 +9,11 @@ function desencriptar() {
       mensajeDesencriptado = mensajeDesencriptado.replaceAll("ufat","u");
     }
 
-    document.getElementById("mensajedesencriptado").value = mensajeDesencriptado;
+    document.getElementById("textOutput").value = mensajeDesencriptado;
   }
 
   function encriptar() {
-    let mensajeDesencriptado = document.getElementById("mensajedesencriptado").value;
+    let mensajeDesencriptado = document.getElementById("textInput").value;
     mensajeDesencriptado = mensajeDesencriptado.toLowerCase()
     mensajeDesencriptado = mensajeDesencriptado.replace(/[^a-zA-Z]/g, '');
     let mensajeEncriptado = mensajeDesencriptado.split("");
@@ -43,5 +43,11 @@ function desencriptar() {
     mensajeEncriptado = mensajeEncriptado.toString();
     mensajeEncriptado = mensajeEncriptado.replaceAll(",","");
 
-    document.getElementById("mensajeencriptado").value = mensajeEncriptado;
+    document.getElementById("textOutput").value = mensajeEncriptado;
   }
+
+
+function copiarTexto(){
+  let text = document.getElementById("textOutput").value
+  navigator.clipboard.writeText(text)
+}

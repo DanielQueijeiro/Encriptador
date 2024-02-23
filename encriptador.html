@@ -18,12 +18,18 @@
     <main>
         <div class="content">
             <section class="inputContainer">
-                <textarea id="textInput" placeholder="Hola"></textarea>
-                <input type="button">
+                <textarea id="textInput" placeholder="Pon aqui el mensaje que quieras encriptar o desencriptar"></textarea>
+                    <div class="buttonContainer">
+                        <input type="button" value="Encriptar" onclick="encriptar()">
+                        <input type="button" value="Desencriptar" onclick="desencriptar()">
+                    </div>
             </section>
 
             <section class="outputContainer">
-                <textarea>Si</textarea>
+                <textarea id="textOutput"></textarea>
+                    <div class="buttonContainer">
+                        <input type="button" value="Copiar texto" onclick="copiarTexto()">
+                    </div>
             </section>
         </div>
     </main>
