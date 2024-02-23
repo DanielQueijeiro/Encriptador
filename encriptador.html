@@ -21,14 +21,16 @@
                 <textarea id="textInput" placeholder="Pon aqui el mensaje que quieras encriptar o desencriptar"></textarea>
                     <div class="buttonContainer">
                         <input type="button" value="Encriptar" onclick="encriptar()">
+                        <input type="button" value="Borrar texto" onclick="borrarTexto('textInput')">
                         <input type="button" value="Desencriptar" onclick="desencriptar()">
                     </div>
             </section>
 
             <section class="outputContainer">
-                <textarea id="textOutput"></textarea>
+                <textarea id="textOutput" placeholder="Aquí se mostrara el texto resultante"></textarea>
                     <div class="buttonContainer">
                         <input type="button" value="Copiar texto" onclick="copiarTexto()">
+                        <input type="button" value="Borrar texto" onclick="borrarTexto('textOutput')">
                     </div>
             </section>
         </div>

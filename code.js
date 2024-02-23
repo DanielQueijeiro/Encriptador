@@ -47,6 +47,10 @@ function desencriptar() {
   }
 
 
+function borrarTexto(id){
+  document.getElementById(id).value = "";
+}
+
 function copiarTexto(){
   let text = document.getElementById("textOutput").value
   navigator.clipboard.writeText(text)
