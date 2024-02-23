@@ -5,15 +5,43 @@ html, body {
     background: linear-gradient(51deg, rgba(198,238,255,1) 0%, rgba(96,150,255,1) 100%);
 }
 
+header{
+    font-size: large;
+    width: 100%;
+    margin: 15px;
+    padding: 20px 0;
+    text-align: left;
+}
+
 .content{
     display: flex;
     justify-content: space-around;
 }
 
-#textInput{
+textarea{
     height: 200px;
     width: 200px;
     font-size: medium;
     border: none;
     border-radius: 5px;
+    resize: none;
+}
+
+textarea::placeholder{
+    color: red;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #AAABB8;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img{
+    margin-top: 7px;
+    width: 15px;
 }
