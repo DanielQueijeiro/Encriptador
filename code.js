@@ -1,6 +1,8 @@
 function desencriptar() {
     let mensajeEncriptado = document.getElementById("textInput").value;
     let mensajeDesencriptado = mensajeEncriptado;
+    mensajeDesencriptado = mensajeDesencriptado.toLowerCase()
+    mensajeDesencriptado = mensajeDesencriptado.replace(/[^a-zA-Z]/g, '');
     for(let index in mensajeEncriptado){
       mensajeDesencriptado = mensajeDesencriptado.replaceAll("ai","a");
       mensajeDesencriptado = mensajeDesencriptado.replaceAll("enter","e");
