@@ -1,15 +1,12 @@
 function desencriptar() {
-    let mensajeEncriptado = document.getElementById("textInput").value;
-    let mensajeDesencriptado = mensajeEncriptado;
+    let mensajeDesencriptado = document.getElementById("textInput").value;
     mensajeDesencriptado = mensajeDesencriptado.toLowerCase()
     mensajeDesencriptado = mensajeDesencriptado.replace(/[^a-z]+/gi, " ");
-    for(let index in mensajeEncriptado){
-      mensajeDesencriptado = mensajeDesencriptado.replaceAll("ai","a");
-      mensajeDesencriptado = mensajeDesencriptado.replaceAll("enter","e");
-      mensajeDesencriptado = mensajeDesencriptado.replaceAll("imes","i");
-      mensajeDesencriptado = mensajeDesencriptado.replaceAll("ober","o");
-      mensajeDesencriptado = mensajeDesencriptado.replaceAll("ufat","u");
-    }
+    mensajeDesencriptado = mensajeDesencriptado.replaceAll("ai","a");
+    mensajeDesencriptado = mensajeDesencriptado.replaceAll("enter","e");
+    mensajeDesencriptado = mensajeDesencriptado.replaceAll("imes","i");
+    mensajeDesencriptado = mensajeDesencriptado.replaceAll("ober","o");
+    mensajeDesencriptado = mensajeDesencriptado.replaceAll("ufat","u");
 
     document.getElementById("textOutput").value = mensajeDesencriptado;
   }
