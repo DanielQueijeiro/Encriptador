@@ -21,23 +21,23 @@ function desencriptar() {
     let mensajeEncriptado = mensajeDesencriptado.split("");
 
     for(let index in mensajeEncriptado){
-      if(mensajeEncriptado[index] == "a"){
+      if(mensajeEncriptado[index] === "a"){
         mensajeEncriptado[index] = "ai";
       }
       
-      if(mensajeEncriptado[index] == "e"){
+      if(mensajeEncriptado[index] === "e"){
         mensajeEncriptado[index] = "enter";
       }
 
-      if(mensajeEncriptado[index] == "i"){
+      if(mensajeEncriptado[index] === "i"){
         mensajeEncriptado[index] = "imes";
       }
 
-      if(mensajeEncriptado[index] == "o"){
+      if(mensajeEncriptado[index] === "o"){
         mensajeEncriptado[index] = "ober";
       }
 
-      if(mensajeEncriptado[index] == "u"){
+      if(mensajeEncriptado[index] === "u"){
         mensajeEncriptado[index] = "ufat";
       }
     }
