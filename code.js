@@ -2,7 +2,7 @@ function desencriptar() {
     let mensajeEncriptado = document.getElementById("textInput").value;
     let mensajeDesencriptado = mensajeEncriptado;
     mensajeDesencriptado = mensajeDesencriptado.toLowerCase()
-    mensajeDesencriptado = mensajeDesencriptado.replace(/[^a-zA-Z]/g, '');
+    mensajeDesencriptado = mensajeDesencriptado.replace(/[^a-z]+/gi, " ");
     for(let index in mensajeEncriptado){
       mensajeDesencriptado = mensajeDesencriptado.replaceAll("ai","a");
       mensajeDesencriptado = mensajeDesencriptado.replaceAll("enter","e");
@@ -17,7 +17,7 @@ function desencriptar() {
   function encriptar() {
     let mensajeDesencriptado = document.getElementById("textInput").value;
     mensajeDesencriptado = mensajeDesencriptado.toLowerCase()
-    mensajeDesencriptado = mensajeDesencriptado.replace(/[^a-zA-Z]/g, '');
+    mensajeDesencriptado = mensajeDesencriptado.replace(/[^a-z]+/gi, " ");
     let mensajeEncriptado = mensajeDesencriptado.split("");
 
     for(let index in mensajeEncriptado){
