@@ -1,7 +1,8 @@
 function desencriptar() {
     let mensajeDesencriptado = document.getElementById("textInput").value;
     mensajeDesencriptado = mensajeDesencriptado.toLowerCase()
-    mensajeDesencriptado = mensajeDesencriptado.replace(/[^a-z]+/gi, " ");
+    mensajeDesencriptado = mensajeDesencriptado.replace(/[^\w\s]|[\d]/g, '');
+    mensajeDesencriptado = mensajeDesencriptado.replace(/\s{2,}/g, ' ');
     mensajeDesencriptado = mensajeDesencriptado.replaceAll("ai","a");
     mensajeDesencriptado = mensajeDesencriptado.replaceAll("enter","e");
     mensajeDesencriptado = mensajeDesencriptado.replaceAll("imes","i");
@@ -14,7 +15,8 @@ function desencriptar() {
   function encriptar() {
     let mensajeDesencriptado = document.getElementById("textInput").value;
     mensajeDesencriptado = mensajeDesencriptado.toLowerCase()
-    mensajeDesencriptado = mensajeDesencriptado.replace(/[^a-z]+/gi, " ");
+    mensajeDesencriptado = mensajeDesencriptado.replace(/[^\w\s]|[\d]/g, '');
+    mensajeDesencriptado = mensajeDesencriptado.replace(/\s{2,}/g, ' ');
     let mensajeEncriptado = mensajeDesencriptado.split("");
 
     for(let index in mensajeEncriptado){
